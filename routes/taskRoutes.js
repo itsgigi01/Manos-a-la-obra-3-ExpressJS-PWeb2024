@@ -1,4 +1,5 @@
 const express = require("express");
+const router = express.Router();
 const {
     createTask,
     updateTask,
@@ -8,7 +9,7 @@ const {
 } = require("../controller/task");  
 
 
-const router = express.Router();
+
 
 // Obtener todas las tareas
 router.get("/", getTasks); 
